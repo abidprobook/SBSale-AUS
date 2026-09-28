@@ -18,6 +18,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20' # Recommended latest stable version
+
+      - name: Install Dependencies
+        run: |
+          npm install axios
       
       - name: Fetch JS Script 
         run: |
